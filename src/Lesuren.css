@@ -1,0 +1,44 @@
+.dates {
+    display: grid;
+    justify-content: center;
+    padding-bottom: 20px;
+    grid-template-columns: repeat(4, 0fr);
+}
+.date {
+    margin-top: 20px;
+    padding: 20px;
+    border-style: solid;
+    border-color: #DDD;
+}
+.time {
+    padding: 10px 20px;
+}
+.maandag {
+    background-image: url("./../public/images/textures/bubbles.jpg");
+    background-color: #DDDDDD;
+    background-blend-mode: hard-light;
+    background-repeat: repeat;
+    background-size: 112%;
+}
+.spacer {
+    width: 20px;
+}
+.zaterdag {
+    background-image: url("./../public/images/textures/waves.png");
+    background-color: #AAAAAA;
+    background-blend-mode: hard-light;
+    background-repeat: repeat;
+    background-size: 200%;
+}
+
+@media (max-width:599px) {
+    .dates {
+        display: grid;
+        justify-content: center;
+        padding-bottom: 20px;
+        grid-template-columns: repeat(1, 0fr);
+    }
+    .spacer {
+        width: 0;
+    }
+}

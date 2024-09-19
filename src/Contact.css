@@ -1,0 +1,96 @@
+.andere .item .item-content {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+.registratie {
+    max-width: 650px;
+    text-align: center;
+    margin: auto
+}
+.leaflet-container {
+    height: 300px; 
+    width: 400px;
+}
+.item-content .zin {
+    background-color: #FAFAFA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+.icon-button {
+    width: 40px;
+    height: 40px;
+    border: none;
+    background-color: #0000;
+    background-size: contain;
+    transition: transform .2s;
+}
+.icon-button:hover {
+    transform: scale(1.2);
+}
+.icon-button-facebook {
+    background-image: url("./../public/images/contact/facebook.svg");
+    margin-right: 10px;
+}
+.icon-button-instagram {
+    background-image: url("./../public/images/contact/instagram.svg"); 
+}
+.andere .item .contact-content {
+    display: block;
+    margin: auto;
+    width: fit-content;
+    padding: 10px;
+}
+.contact {
+    display: flex;
+    align-content: center;
+    padding-bottom: 7px;
+}
+.contact .icon {
+    margin-right: 12px;
+}
+.andere .item .contact-content .icon-buttons {
+    display: flex;
+    margin: auto;
+    width: fit-content;
+    padding: 5px;
+}
+
+.rows {
+    display: grid;
+    grid: auto auto;
+    grid-column-gap: 10px;
+}
+.rows .row1 {
+    grid-row: 1;
+}
+.rows .row2 {
+    grid-row: 2;
+}
+
+@media (max-width:884px) and (min-width:600px) {
+    .leaflet-container {
+        height: 250px; 
+        width: 500px;
+        margin: auto;
+    }
+    .andere .item .locatie {
+        display: block;
+        width: 500px;
+        margin: auto;
+    }
+    }
+@media (max-width:599px) {
+    .leaflet-container {
+        height: 200px; 
+        width: 300px;
+        margin: auto;
+    }
+    .andere .item .locatie {
+        display: block;
+        width: 300px;
+        margin: auto;
+    }
+}

@@ -1,0 +1,46 @@
+.groep {
+    width: 255px;
+    height: 170px;
+    border-radius: 5%;
+    box-shadow: 2px 3px 10px rgba(0,0,0,0.15);
+    padding: 10px;
+    margin: 10px;
+}
+.vaardigheden-lijst li {
+    margin: 0 0 10px 0;
+}
+.groep .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.groep .title h3 {
+    padding: 10px 10px;
+}
+.groep .title .icon {
+    width: 20px;
+    height: 20px;
+}
+.groepen-container {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 0fr);
+    padding-bottom: 10px;
+}
+
+@media (max-width:884px) and (min-width:600px) {
+    .groepen-container {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(2, 0fr);
+        padding-bottom: 10px;
+    }
+}
+@media (max-width:599px) {
+    .groepen-container {
+        display: grid;
+        justify-content: center;
+        grid-template-columns: repeat(1, 0fr);
+        padding-bottom: 10px;
+    }
+}

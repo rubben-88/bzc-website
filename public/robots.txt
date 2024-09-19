@@ -1,0 +1,2 @@
+sitemap: https://bornemsezwemclub.com/sitemap.xml
+User-agent: *

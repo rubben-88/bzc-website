@@ -1,0 +1,24 @@
+creating a build:
+	run 'npm start'
+		if error 'react-scripts: command not found'
+		then delete package-lock.json and run 'npm install'
+	...
+	run 'npm run build'
+
+	draft version:
+		Go to 000webhost, log in and choose project.
+		Go to file manager and then public_html.
+		Remove every file except for .htaccess.
+		Upload every file from previous build.
+		Leave file manager and click the link to the website 
+			or simply enter https://bornemsezwemclub.000webhostapp.com/
+	
+	actual version:
+		Go to cloud86 and log in.
+		Choose 'Mijn diensten'.
+		Choose 'bornemsezwemclub.com'.
+		Choose 'bestandsbeheer'.
+		Go to httpdocs.
+		Remove all files except .htaccess and replace them with the build files.
+	
+firebase (realtime database + storage): https://console.firebase.google.com/u/1/project/bornemsezwemclub-371d3/overview

@@ -1,0 +1,83 @@
+
+.photos-container {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    pointer-events: none;
+}
+.photos-container swiper-container::part(button-prev) {
+    color: white;
+    padding-left: 8px;
+    height: 40px;
+}
+.photos-container swiper-container::part(button-next) {
+    color: white;
+    padding-right: 8px;
+    height: 40px;
+}
+
+.photos-container swiper-container {
+    width: 700px;
+    height: 700px;
+    
+}
+.photos-container swiper-container img {
+    width: 700px;
+    height: 700px;
+    object-fit: contain;
+    object-position: center;
+}
+
+
+
+@media (max-width:884px) and (min-width:600px) {
+    .photos-container swiper-container {
+        width: 450px;
+        height: 450px;
+    }
+    .photos-container swiper-container img {
+        width: 450px;
+        height: 450px;
+    }
+}
+  
+@media (max-width:599px) {
+    .photos-container swiper-container {
+        width: 300px;
+        height: 300px;
+    }
+    .photos-container swiper-container img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+.navigation {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 10px;
+}
+.nav-elem {
+    margin-right: 25px;
+}
+.nav-text {
+    font-size: medium;
+    font-size: large;
+}
+.slide-button {
+    border-radius: 10%;
+    height: 35px;
+    width: 90px;
+    font-size: medium;
+    font-weight: 600;
+    border-width: 2px;
+}
+.slide-button:enabled {
+    background-color: #5050ff;
+    color: white;
+    border-color: blue;
+}
+.slide-button:disabled {
+    color: gray;
+}
